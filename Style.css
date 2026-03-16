@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #0a0a0a;
+    --text-color: #00ff41; /* Verde Matrix clásico */
+    --accent-color: #00ff41;
+    --glow: 0 0 8px rgba(0, 255, 65, 0.6);
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    line-height: 1.4;
+    text-shadow: var(--glow);
+}
+
+.terminal-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 2px solid #222;
+    padding: 25px;
+    background: #0d0d0d;
+    box-shadow: 0 0 20px rgba(0,0,0,1);
+}
+
+/* Header */
+.terminal-header {
+    border-bottom: 1px solid #222;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.header-decor {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Títulos */
+.prompt-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.prompt-title::before {
+    content: "> ";
+    color: var(--text-color);
+}
+
+/* Secciones */
+.terminal-section {
+    margin-bottom: 30px;
+}
+
+.content {
+    border: 1px solid #222;
+    padding: 15px;
+}
+
+.highlight {
+    background: var(--text-color);
+    color: #000;
+    padding: 0 5px;
+    text-shadow: none;
+}
+
+.label {
+    color: #888;
+}
+
+/* Listas */
+.file-list {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.file-icon, .exec {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.entry {
+    border-left: 2px solid #222;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.meta {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.terminal-footer {
+    margin-top: 30px;
+    border-top: 1px solid #222;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #444;
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+    .grid { grid-template-columns: 1fr; }
+}

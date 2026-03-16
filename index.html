@@ -1,46 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV_MICHEL :: System_Access_Granted</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
----Perfil Personal---
-Me llamo Michel, tengo 19 años, y soy estudiante de Desarrollo de aplicaciones web, me considero un chico responsable y meticuloso, me gusta que todo esté a la perfección y me interesa mucho aprender cosas nuevas sobre la informática.
 
----Experiencia Laboral---
-<h1>Tecnico informatico</h1>
-Practicas (Marzo 2025 - Junio 2025)
-Practicas de empresa en Jaén en la empresa Beep situada en Av. de Madrid, 24, 23001 Jaén
-Mantenimiento y reparación de servidores y equipos informáticos.
-Montaje y configuración de equipos electrónicos.
-Instalación y puesta en marcha de dispositivos electrónicos.
-Experiencia en teleasistencia: instalación, configuración y verificación de dispositivos utilizados en servicios de atención remota a personas.
+    <div class="terminal-container">
+        <header class="terminal-header">
+            <div class="header-decor">[SYSTEM://ROOT_USER/MICHEL]</div>
+            <p class="matrix-text subtitle">_INI :: INICIANDO SECUENCIA_CV...</p>
+        </header>
 
+        <section id="perfil" class="terminal-section">
+            <h2 class="prompt-title">cat profil_personal.txt</h2>
+            <div class="content profile-box">
+                <p><span class="label">ID:</span> Michel <span class="label">EDAD:</span> 19</p>
+                <p>Estudiante de <span class="highlight">Desarrollo de Aplicaciones Web</span>. Perfil meticuloso, responsable. Fuerte interés en la informática avanzada y el aprendizaje continuo.</p>
+            </div>
+        </section>
 
-<h1>Tecnico superior</h1>
-Estudiate Daw curso(25-26)
-Cursando primer año de Desarrollo de aplicaciones webs
+        <section id="experiencia" class="terminal-section">
+            <h2 class="prompt-title">grep -r "experiencia_laboral" /logs/</h2>
+            
+            <div class="item entry">
+                <h3>/usr/bin/tecnico-informatico</h3>
+                <p class="meta"> Practicas / Jaén / [Beep] / (2025.03 - 2025.06)</p>
+                <ul class="file-list">
+                    <li><span class="file-icon">├──</span> Mantenimiento/reparación de servidores.</li>
+                    <li><span class="file-icon">├──</span> Montaje/configuración de hardware.</li>
+                    <li><span class="file-icon">├──</span> Instalación de dispositivos electrónicos.</li>
+                    <li><span class="file-icon">└──</span> Teleasistencia: instalación y verificación.</li>
+                </ul>
+            </div>
+        </section>
 
-Conocimientos básicos en programación Java.
-Desarrollo y maquetación en HTML.
-Manejo de distintos sistemas operativos (Windows, Linux y otros).
+        <section id="estudios-actuales" class="terminal-section">
+            <h2 class="prompt-title">status check --daw_25_26</h2>
+            <div class="item entry">
+                <h3>/usr/bin/estudiante-superior-daw</h3>
+                <p>Cursando <span class="highlight">DAW [Primer Año]</span>.</p>
+                <p class="file-list"><span class="file-icon">├──</span> Core: <strong>Java</strong>, HTML/CSS.</p>
+                <p class="file-list"><span class="file-icon">└──</span> OS: Windows, Linux, others.</p>
+            </div>
+        </section>
 
----Habilidades---
-Manejo de Apps Ofimáticas
-Montaje y mantenimiento de equipos
-Gestión de servidores
-Gestión de redes sociales
-Carnet de conducir
+        <div class="grid">
+            <section id="habilidades" class="terminal-section">
+                <h2 class="prompt-title">ls -la skills/</h2>
+                <ul class="file-list command-list">
+                    <li><span class="exec">./</span>Manejo Apps Ofimáticas</li>
+                    <li><span class="exec">./</span>Montaje de Hardware</li>
+                    <li><span class="exec">./</span>Gestión Servidores/Redes</li>
+                    <li><span class="exec">./</span>Gestión RRSS</li>
+                    <li><span class="exec">./</span>Carnet Conducir (B)</li>
+                </ul>
+            </section>
 
----Formación---
-IES Peña del Aguila
-Fp grado medio
--Microsistemas y redes
-IES Hermenegildo Lanz
-Estudiante Grado superior
--Desarrollo de App Webs
+            <section id="formacion" class="terminal-section">
+                <h2 class="prompt-title">history formacion/</h2>
+                <div class="entry item-small">
+                    <strong>> IES Hermenegildo Lanz</strong>
+                    <p>Fp Grado Superior DAW (En curso)</p>
+                </div>
+                <div class="entry item-small">
+                    <strong>> IES Peña del Águila</strong>
+                    <p>Fp Grado Medio Microsistemas y Redes</p>
+                </div>
+            </section>
+        </div>
+
+        <footer class="terminal-footer">
+            <p>_SYSTEM_READY [OK]</p>
+            <p>CONEXIÓN SEGURA [ESTABLECIDA]</p>
+        </footer>
+    </div>
 
 </body>
 </html>
